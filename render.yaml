@@ -1,0 +1,6 @@
+services:
+     - type: web
+       name: product-extractor-api
+       env: python
+       buildCommand: pip install -r requirements.txt
+       startCommand: gunicorn app:app
